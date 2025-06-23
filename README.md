@@ -8,9 +8,9 @@ As soluções foram desenvolvidas em Java, utilizando Threads para a implementa�
 
 O projeto aborda a busca por números perfeitos e pares de números amigáveis em grandes intervalos, explorando três paradigmas de programação:
 
-*   **Solução Sequencial**: Implementação tradicional, processando os números um a um.
-*   **Solução Paralela**: Utiliza `Threads` em Java para dividir o trabalho e processar subintervalos simultaneamente.
-*   **Solução Distribuída**: Emprega `Java RMI` para distribuir a carga de trabalho entre diferentes processos (simulando máquinas distintas).
+- **Solução Sequencial**: Implementação tradicional, processando os números um a um.
+- **Solução Paralela**: Utiliza `Threads` em Java para dividir o trabalho e processar subintervalos simultaneamente.
+- **Solução Distribuída**: Emprega `Java RMI` para distribuir a carga de trabalho entre diferentes processos (simulando máquinas distintas).
 
 ## 🎯 Objetivo
 
@@ -20,46 +20,46 @@ Implementar e comparar soluções sequencial, paralela e distribuída para o pro
 
 ### Números Perfeitos
 
-Um número natural é **perfeito** se a soma de seus divisores naturais próprios (excluindo ele mesmo) é igual ao próprio número. Exemplo: `6` (divisores próprios: `1, 2, 3`; soma: `1+2+3=6`).
+Um número natural é **perfeito** se a soma de seus divisores naturais próprios (excluindo ele mesmo) é igual ao próprio número.  
+Exemplo: `6` (divisores próprios: `1, 2, 3`; soma: `1 + 2 + 3 = 6`).
 
 ### Números Amigáveis
 
-Dois números são **amigáveis** se cada um deles é a soma dos divisores próprios do outro. Exemplo: `(220, 284)`.
+Dois números são **amigáveis** se cada um deles é a soma dos divisores próprios do outro.  
+Exemplo: `(220, 284)`.
 
 ## 🛠️ Tecnologias Utilizadas
 
-*   **Java**: Linguagem de programação.
-*   **Maven**: Ferramenta de automação de build e gerenciamento de dependências.
-*   **Java Threads**: Para paralelismo.
-*   **Java RMI**: Para computação distribuída.
+- **Java**: Linguagem de programação.
+- **Maven**: Ferramenta de automação de build e gerenciamento de dependências.
+- **Java Threads**: Para paralelismo.
+- **Java RMI**: Para computação distribuída.
 
 ## ⚙️ Como Executar
 
 ### Execução no VS Code
 
-Para usar o código no VS Code, siga estes passos:
-
-1.  **Descompacte o arquivo `perfect_amicable_numbers_code.zip`** em uma pasta de sua preferência.
-2.  **Abra o VS Code**.
-3.  Selecione a pasta `perfect_amicable_numbers` que você descompactou.
+1. **Descompacte o arquivo** em uma pasta de sua preferência.
+2. **Abra o VS Code**.
+3. Selecione a pasta que você descompactou.
 
 **Para executar as diferentes soluções no VS Code:**
 
-*   **Solução Sequencial:**
-    1.  Abra o arquivo `src/main/java/com/example/perfectamicable/VerificadorNumeros.java`.
-    2.  Clique no botão "Run"
+- **Solução Sequencial:**
+  1. Abra o arquivo `src/main/java/com/example/perfectamicable/VerificadorNumeros.java`.
+  2. Clique no botão "Run".
 
-*   **Solução Paralela:**
-    1.  Abra o arquivo `src/main/java/com/example/perfectamicable/VerificadorNumerosParalelo.java`.
-    2.  Clique no botão "Run"
+- **Solução Paralela:**
+  1. Abra o arquivo `src/main/java/com/example/perfectamicable/VerificadorNumerosParalelo.java`.
+  2. Clique no botão "Run".
 
-*   **Solução Distribuída (RMI):**
-    1.  **Primeiro, inicie o servidor RMI:**
-        *   Abra o arquivo `src/main/java/com/example/perfectamicable/ServidorNumeros.java`.
-        *   Clique no botão "Run"
-    2.  **Em seguida, inicie o cliente RMI:**
-        *   Abra o arquivo `src/main/java/com/example/perfectamicable/ClienteNumeros.java`.
-        *   Clique no botão "Run"
+- **Solução Distribuída (RMI):**
+  1. **Inicie o servidor:**
+     - Abra o arquivo `src/main/java/com/example/perfectamicable/ServidorNumeros.java`.
+     - Clique no botão "Run".
+  2. **Em seguida, inicie o cliente:**
+     - Abra o arquivo `src/main/java/com/example/perfectamicable/ClienteNumeros.java`.
+     - Clique no botão "Run".
 
 ## 📊 Resultados de Desempenho
 
@@ -86,14 +86,11 @@ Os testes foram realizados em um ambiente com as seguintes características:
 | Distribuído     | (1, 20000)              | 130562     |
 | Distribuído     | (1, 30000)              | 130553     |
 
-
 ## 🤝 Contribuições
 
-*   *Membro 1 (Introdução e Contexto do Problema)*: Pesquisa aprofundada sobre Números Perfeitos e Amigáveis, elaboração do relatório e do início dos slides.
-*   *Membro 2 (Metodologia e Solução Sequencial)*: Desenvolvimento da solução sequencial, otimização do algoritmo de soma de divisores e documentação da metodologia.
-*   *Membro 3 (Solução Paralela - Threads)*: Implementação da solução paralela com Threads em Java, gerenciamento de concorrência e documentação dos aspectos de paralelismo.
-*   *Membro 4 (Solução Distribuída - RMI)*: Desenvolvimento da solução distribuída com RMI, configuração do ambiente cliente-servidor e documentação da arquitetura distribuída.
-*   *Membro 5 (Resultados e Análise de Desempenho)*: Execução dos testes de desempenho para todas as soluções, coleta e organização dos dados, e criação dos gráficos comparativos.
-*   *Membro 6 (Conclusão)*: Análise dos resultados, finalização dos slides e organização das referências do trabalho.
-
-
+- **Gabriel Faria**: Introdução, pesquisa sobre Números Perfeitos e Amigáveis, elaboração do relatório e do início dos slides.
+- **Lucas Teixeira**: Desenvolvimento da solução sequencial, otimização do algoritmo de soma de divisores e documentação da metodologia.
+- **Beatriz Lopes**: Implementação da solução paralela com Threads em Java, gerenciamento de concorrência e documentação dos aspectos de paralelismo.
+- **Augusto Thiago**: Desenvolvimento da solução distribuída com RMI, configuração do ambiente cliente-servidor e documentação da arquitetura distribuída.
+- **Matheus Chicoli**: Execução dos testes de desempenho para todas as soluções, organização dos dados e criação dos gráficos.
+- **Abner do Nascimento**: Análise dos resultados, organização do código, finalização dos slides e das referências do trabalho.
